@@ -4,19 +4,27 @@
 
 .Introduction { 
     margin: auto;
-    width: 50%;
-}
-
-.Introduction button{
-    text-align: justify;
     width: 113px;
 }
 
+.Introduction h1{
+    width: 100%;
+    text-align: center;
+}
+
+.Introduction button {
+    width: 100%;
+    text-align: center;
+}
 .ContactMe {
-    margin: 0 auto;
-    width: 50%;
+    margin: auto;
+    width: 113px;
 }
 
 li {
     list-style-type: circle;
+}
+
+#LMSApp {
+    float: left;
 }
