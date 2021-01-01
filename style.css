@@ -1,19 +1,25 @@
 .menu {
     background-color: black;
+    height: 100%;
+    width: 100%;
 }
 
 .Introduction { 
     margin: auto;
-    width: 113px;
+    width: 100%;
+    height: 100%;
 }
 
+.Introduction img{
+    margin: auto;
+}
 .Introduction h1{
     width: 100%;
     text-align: center;
 }
 
 .Introduction button {
-    width: 100%;
+    width: 50%;
     text-align: center;
 }
 .ContactMe {
@@ -27,4 +33,8 @@ li {
 
 #LMSApp {
     float: left;
+}
+
+#Unbound {
+    float: right;
 }
