@@ -18,8 +18,9 @@ body {
 }
 
 #menu a:hover{
-    background-color: #f5f5f5;
+    background-color: #e4e2e236;
 }
+
 .sticky {
     position: fixed;
     top: 0;
