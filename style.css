@@ -1,35 +1,67 @@
-.menu {
+body {
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;  
+}
+
+#menu {
     background-color: black;
-    height: 100%;
+    overflow: hidden;
+}
+
+#menu a{
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
     width: 100%;
 }
 
-.Introduction { 
+.content {
+    padding: 16px;
+}
+
+.sticky + .content {
+    padding-top: 60px;
+}
+#Introduction { 
     margin: auto;
     max-width: 100%;
     max-height: 100%;
 }
 
-.Introduction img{
+#Introduction img{
     display: block;
     margin-left: auto;
     margin-right: auto;
 }
-.Introduction h1{
+#Introduction h1{
     width: 100%;
     text-align: center;
 }
 
-.Introduction button {
+#Introduction button {
     display: block;
     margin-left: auto;
     margin-right: auto;
     width: 113px;
     text-align: center;
 }
-.ContactMe {
-    margin: auto;
-    width: 113px;
+#ContactMe {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+#ContactMe p{
+    font-size: 10px;
 }
 
 li {

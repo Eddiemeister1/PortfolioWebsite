@@ -7,8 +7,8 @@
         <link rel="stylesheet" href="style.css">
     </head>
 
-    <body>
-       <div class="menu">
+    <body style="background-image: url(img/LightBlueBackground.jpg);">
+       <div id="menu">
            <a href="#Home">
             Home
            </a>
@@ -22,7 +22,7 @@
             Contact Me
            </a>
        </div>
-       <div class="Introduction" style="background-image: url(img/LightBlueBackground.jpg);">
+       <div id="Introduction" class="content" style="background-image: url(img/LightBlueBackground.jpg);">
         <a id="Home">
             <h1>Eduardo Dotel</h1>
             <img id="profilePic" src= "img/eduardoprofilepic.jpg" height="200px" width="113px">
@@ -32,7 +32,7 @@
                 </a>
         </a>
        </div>
-       <div class="About">
+       <div id="About"class="content">
         <a id="AboutMe">
             <h1>About Me</h1>
             <ul>
@@ -42,7 +42,7 @@
             </ul>
         </a>
        </div>
-       <div class="Projects">
+       <div id="Projects" class="content">
            <a id="Work">
             <h1> Projects </h1>
                 <img id="LMSApp" src="img/LMSApponFacebookWebsite.jpg" height="100px" width="100px">
@@ -50,6 +50,7 @@
                     This project was worked on for my Senior project throughout the Summer and Fall of 2020.<br>
                     I mainly contributed to the group feature and the StudentsSection page of the website.
                 </p>
+                <br>
                 <img id="Unbound" src="img/UnboundGame.png" height="100px" width="100px"> 
                 <p> 
                     This project serves to be a personal hobby. It is a Unity first person shooter game where the player <br>
@@ -61,7 +62,7 @@
            </a>
        </div>
        <br>
-       <div class="ContactMe">
+       <div id="ContactMe" class="content">
            <a id="Contact">
             <h1> Contact Me </h1>
             <a href=https://github.com/Eddiemeister1>
@@ -71,6 +72,21 @@
                 <img src="img/linkedIn.png" height= "50px" width="50px">
             </a>
            </a>
+           <p>This website was created from scratch by myself using HTML, CSS, NodeJs, and Visual Studio Code.</p>
        </div>
+       <script>
+        window.onscroll = function() {myFunction()};
+        
+        var navbar = document.getElementById("menu");
+        var sticky = navbar.offsetTop;
+        
+        function myFunction() {
+          if (window.pageYOffset >= sticky) {
+            navbar.classList.add("sticky")
+          } else {
+            navbar.classList.remove("sticky");
+          }
+        }
+        </script>
     </body>
 </html>
