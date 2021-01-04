@@ -79,6 +79,12 @@ body {
     text-align: center;
 }
 
+.ContactLinks {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
 #Contact {
     display: block;
     width: 100%;
@@ -94,5 +100,4 @@ li {
 
 #Unbound {
     float: right;
-    text-align: center;
 }
