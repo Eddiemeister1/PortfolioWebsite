@@ -68,6 +68,8 @@ body {
     float: right;
     border-radius: 15px;
     display: block;
+    line-height: 10px;
+    margin-right: 50px;
     box-shadow: 0 10px 15px 0 rgba(0, 0, 0, 0.2), 0 6px 24px 0 rgba(0,0,0,0.19);
 }
 
@@ -124,5 +126,5 @@ li {
 }
 
 #Unbound {
-    float: right;
+    float: left;
 }
