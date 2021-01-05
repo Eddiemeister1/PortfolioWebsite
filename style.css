@@ -39,6 +39,9 @@ body {
     margin: auto;
     max-width: 100%;
     max-height: 100%;
+    background-image: url(img/MiamiNight.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 
 #Introduction h1{
@@ -61,6 +64,13 @@ body {
     text-decoration: none;
 }
 
+#profilePic {
+    float: right;
+    border-radius: 15px;
+    display: block;
+    box-shadow: 0 10px 15px 0 rgba(0, 0, 0, 0.2), 0 6px 24px 0 rgba(0,0,0,0.19);
+}
+
 #Introduction button:hover {
     background-color: white;
     color: rgb(4, 105, 83);
@@ -73,7 +83,7 @@ body {
     border-collapse: collapse;
 }
 
-#Languages td, th {
+#Languages td, #Languages th {
     border-bottom: 5px solid black;
     border-right: 5px solid black;
 }
