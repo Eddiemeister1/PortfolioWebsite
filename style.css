@@ -64,9 +64,10 @@ body {
     text-decoration: none;
 }
 
+
 #profilePic {
     float: right;
-    border-radius: 15px;
+    border-radius: 2px;
     display: block;
     line-height: 10px;
     margin-right: 50px;
@@ -85,6 +86,8 @@ body {
     border-collapse: collapse;
 }
 
+
+
 #Languages td, #Languages th {
     border-bottom: 5px solid black;
     border-right: 5px solid black;
@@ -96,7 +99,7 @@ body {
     list-style-type: none;
     margin-left: auto;
     margin-right: auto;
-    
+    text-align: center;
 }
 
 #ContactMe {
@@ -132,10 +135,11 @@ li {
 
 
 
-#LMSApp {
+#Portfolio {
     float: left;
 }
 
-#Unbound {
+#PortfolioText {
     float: left;
+    padding-left: 10px;
 }
