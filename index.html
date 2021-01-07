@@ -96,7 +96,20 @@
             <h1> Projects </h1>
                 <h2>Web Development</h2>
                     <h3>LMS App on Facebook</h3>
-                    <img id="Portfolio" src="img/LMSApponFacebookWebsite.jpg" height="200px" width="372px">
+                    <!--This image is going to be the one to open a lightbox of images-->
+                    <img id="LMSApp" src="img/LMSApponFacebookWebsite.jpg" alt="StudentsSection page of Website" height="200px" width="372px">
+                    <!--The Modal-->
+                    <div id="myModal" class="modal">
+                        
+                        <!--The Close Button-->
+                        <span class="close">&times;</span>
+
+                        <!--The Modal Content (The Image)-->
+                        <img class="modal-content" id="LMSApponFacebook">
+
+                        <!--Modal Caption (Image Text)-->
+                        <div id="caption"></div>
+                    </div>
                     <p id="PortfolioText">
                         This project was worked on for my Senior project throughout the Summer and Fall of 2020. <br>
                         I mainly contributed to the group feature and the StudentsSection page of the website. <br>
@@ -178,5 +191,27 @@
           }
         }
         </script>
+    <script>
+    // Get the modal
+    var modal = document.getElementById("myModal");
+    
+    // Get the image and insert it inside the modal - use its "alt" text as a caption
+    var img = document.getElementById("LMSApp");
+    var modalImg = document.getElementById("LMSApponFacebook");
+    var captionText = document.getElementById("caption");
+    img.onclick = function(){
+      modal.style.display = "block";
+      modalImg.src = this.src;
+      captionText.innerHTML = this.alt;
+    }
+    
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
+    
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function() { 
+      modal.style.display = "none";
+    }
+    </script>   
     </body>
 </html>
